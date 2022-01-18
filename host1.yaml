@@ -26,14 +26,6 @@ services:
     networks:
       - hlfn
 
-  orderer2.example.com:
-    extends:
-      file:   base/docker-compose-base.yaml
-      service: orderer2.example.com
-    container_name: orderer2.example.com
-    networks:
-      - hlfn
-
   orderer5.example.com:
     extends:
       file: base/peer-base.yaml
